@@ -35,7 +35,7 @@ function fileLoaded(){
   wordArr = RiTa.untokenize(cyb);
   rs = new RiString(wordArr)
   sent = RiTa.splitSentences(rs)
-  console.log(sent)
+  // console.log(sent)
   console.log("file loaded")
   // print(sent)
   instruct1.show()
