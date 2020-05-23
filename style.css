@@ -1,0 +1,32 @@
+html, body {
+/*   width: 50%; */
+/*   background-color: powderblue; */
+  margin: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+canvas {
+  display: block;
+}
+
+
+.RiTa_Styles{
+  /* border: solid; */
+  width: 400px;
+  /* border-radius: 10px; */
+  font-size: 25px
+  padding: 10px;
+  color: black;
+  /* background-color: #000000 */
+}
+
+.footer {
+  font-family:Arial;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  margin: 100px;
+/*   background-color: red; */
+  color: gray;
+  text-align: left;
+}
