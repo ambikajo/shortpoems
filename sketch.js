@@ -10,6 +10,13 @@ let cybbtn;
 let natbtn;
 let instruct1;
 let startbtn;
+let c;
+let n;
+
+function preload(){
+  c= loadStrings("cyborg.txt")
+   n= loadStrings("nature2.txt")
+}
 // let cyb =["cyborg.txt", "mkb.txt"]
 
 //load cyborg manifesto
@@ -25,11 +32,14 @@ function loadFile2() {
   console.log("TWO")
 }
 
-function loadFile3() {
- cyb =  loadStrings("nature2.txt", fileLoaded);
- // cyb2 =  loadStrings(cyb[1], fileLoaded);
-  console.log("THREE")
-}
+// function loadFile3() {
+//
+//   club = concat(c,n)
+//   print(club)
+//   cyb =  loadStrings(club, fileLoaded);
+//  // cyb2 =  loadStrings(cyb[1], fileLoaded);
+//   console.log("THREE")
+// }
 
 function fileLoaded(){
   wordArr = RiTa.untokenize(cyb);
@@ -51,10 +61,12 @@ function setup() {
   cybbtn.mousePressed(loadFile1)
   natbtn = select("#natbutton")
   natbtn.mousePressed(loadFile2)
+  //joinbtn = select("#joinbtn")
+  //joinbtn.mousePressed(loadFile3)
 
   instruct1 = select("#instruct")
   instruct1.hide()
-startbtn = select("#startbtn")
+  startbtn = select("#startbtn")
   startbtn.hide()
   // wordArr = RiTa.untokenize(cyb);
   // rs = new RiString(wordArr)
